@@ -1,7 +1,5 @@
 /* Global */
-body{
 
-}
 .container{
 	margin: 20px auto;
 	box-shadow: 0px 0px 40px DarkGrey;
@@ -106,9 +104,7 @@ body{
 	color: #A7AEB4;
 	display: inline-block;
 }
-.side-page .contact .social-item .contact-info:first-of-type{
 
-}
 .side-page .contact .social i{
 	background: #FFF;
 	padding: 5px;
