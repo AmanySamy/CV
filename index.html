@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>My Portfolio</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<div class = "container">
+	<div class = "container main-container">
 		<div class = "row">
 			<!-- Start Side Page -->			
 			<div class = "side-page col-md-4 col-sm-4">
@@ -75,6 +75,20 @@
 								</div>
 							</div>								
 						</li>
+						<!-- Sass Skill -->
+						<li>
+							<div class = "row">
+								<div class = "col-md-2 col-sm-2 col-xs-2">
+									<i class = "skill-icon fa fa-css3"></i>	
+								</div>
+								<div class = "col-md-10 col-sm-10 col-xs-10">
+									<h3 class = "skill-name">Sass</h3>
+									<div class = "progress">
+										<div class = "progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+									</div>
+								</div>
+							</div>								
+						</li>
 						<!-- Jquery Skill -->
 						<li>
 							<div class = "row">
@@ -134,20 +148,20 @@
 					<!-- contact information -->
 					<div class="social">
 						<ul class = "list-unstyled">
-							<li class = "social-item">
+							<!--<li class = "social-item">
 								<i class = "contact-icon fa fa-phone"></i>
 								<span class = "contact-info">
 									(+20)01018402932<br>	
 									(+20)01014109417
 								</span> 
-							</li>
+							</li>-->
 							<li class = "social-item">
 								<i class="contact-icon fa fa-google"></i>
-								<span class = "contact-info">amanysamy246@gmail.com</span>
+								<a class="contact-info" href="mailto:amanysamy246@gmail.com?subject=contact">amanysamy246@gmail.com</a>
 							</li>
 							<li class = "social-item">
 								<i class="contact-icon fa fa-yahoo"></i>	
-								<span class = "contact-info">amanysamy628@yahoo.com</span>
+								<a class="contact-info" href="mailto:amanysamy628@yahoo.com?subject=contact">amanysamy628@yahoo.com</a>
 							</li>
 						</ul>
 					</div>
@@ -160,11 +174,11 @@
 			<!-- Start Main Page -->
 			<div class = "main-page col-md-8 col-sm-8">
 				<!-- Nav Taps -->
-				<div class = "col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-6 col-xs-offset-3">
+				<div class = "nav-icons">
 					<ul class = "nav nav-tabs text-center">
-						<li class = "active"><a href = "#cover-letter" data-toggle = "tab"><i class = "sec-icon fa fa-file-text-o" data-toggle ="tooltip" data-placement = "bottom"  title="Cover Letter"></i></a></li>
-						<li><a href = "#portfolio" data-toggle = "tab"><i class = "sec-icon fa fa-folder-open" data-toggle ="tooltip" data-placement = "bottom"  title="Portfolio" ></i></a></li>
-						<li><a href = "#about" data-toggle = "tab"><i class = "sec-icon fa fa-user-o" data-toggle ="tooltip" data-placement = "bottom"  title="About Me"></i></a></li>
+						<li ><a href="#cover-letter" data-toggle ="tab"><i class = "sec-icon fa fa-file-text-o" data-toggle ="tooltip" data-placement = "bottom"  title="Cover Letter"></i></a></li>
+						<li><a href="#portfolio" data-toggle="tab"><i class = "sec-icon fa fa-folder-open" data-toggle ="tooltip" data-placement = "bottom"  title="Portfolio" ></i></a></li>
+						<li class="active"><a href="#about" data-toggle="tab"><i class = "sec-icon fa fa-user-o" data-toggle ="tooltip" data-placement = "bottom"  title="About Me"></i></a></li>
 					</ul>
 				</div>
 				<!-- End Nav Tap -->
@@ -172,7 +186,7 @@
 				<!-- Tap Panes -->
 				<div class = "tab-content">						
 					<!-- Cover Letter Tab Content -->
-					<div class = "tab-pane cover-let fade in active" id = "cover-letter">
+					<div class = "tab-pane cover-let fade in active" id="cover-letter">
 						<p>
 						Dear client,<br>
 						After reading over your application this looks like a perfect fit for my skill sets 
@@ -216,6 +230,30 @@
 					<!-- Portfolio Tab Content -->
 					<div class = "tab-pane" id = "portfolio">
 						<div class = "row">
+							<!-- Photobook Portfolio -->
+							<div class = "col-md-6">
+									<div class = "port">
+										<div class = "overlay">
+											<h2 class = "project-name">Photo Book</h2>
+											<p class = "project-desc">A responsive website based on Bootstrap framework.</p>
+											<a href = "http://make-photobook.bitballoon.com" target = "_blank"><i class = "skill-icon fa fa-link"></i></a>
+										</div>
+										<img class = "img-responsive" src = "img/photobook.png" alt = "">
+										
+									</div>	
+								</div>
+							<!-- BisLit Portfolio -->
+							<div class = "col-md-6">
+									<div class = "port">
+										<div class = "overlay">
+											<h2 class = "project-name">BisLit</h2>
+											<p class = "project-desc">A responsive website based on Bootstrap framework.</p>
+											<a href = "http://bislit.bitballoon.com" target = "_blank"><i class = "skill-icon fa fa-link"></i></a>
+										</div>
+										<img class = "img-responsive" src = "img/bislit.png" alt = "">
+										
+									</div>	
+								</div>
 							<!-- Axit Portfolio -->
 							<div class = "col-md-6">
 								<div class = "port">

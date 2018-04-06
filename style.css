@@ -125,6 +125,11 @@ body{
 	background : #F1F1F1;
 	position: relative;
 }
+.nav-icon{
+	display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .main-page .nav-tabs{
 	margin: 30px auto;
 	border: 0;
